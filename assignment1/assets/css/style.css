@@ -15,7 +15,7 @@ body {
 }
 
 #main-name{
-		/* same for all three pages but the appearance/size varies*/
+		/* top of page same for all three pages but the appearance/size varies*/
 	font-family:"Georgia, Times, Times_New_Roman, serif";
 	background-color:#4aaaa5;
 	color: white;
@@ -74,7 +74,7 @@ body {
 /*below is the right element (Connect with me, applies to p 1-3) in container/main content*/
 .connect{
 	float:right;
-	max-width:23%;
+	width:23%;
 	margin-right:15%;
 	padding-bottom:30px;
 	background-color:#ffffff;
@@ -87,7 +87,6 @@ below is the left element (Contact Form Page 2) in container/main content*/
 	float:left;
 	width:650px;
 	margin-left:3%;
-	border:10px purple;
 	padding-left:30px;
 	padding-right:30px;
 	padding-bottom:30px;
@@ -122,14 +121,25 @@ below is the left element (Contact Form Page 2) in container/main content*/
 }
 .submit {
 	width:115px;
-	height:41px
+	height:41px;
 	padding:11px 30px 15px 30px;
 	background-color:#4aaaa5;
+	border-radius:5px;
+	box-shadow:0 9px #ccc;
 	color: white;
 	font-size:24px;
 	clear:both;
 	float:left;
 	text-align: center;
+}
+.submit:hover{
+	border:4px solid #b5eae7;
+	font-color:#999;
+}
+.submit:active{
+	background-color:#337672;
+	box-shadow: 0 5px #666;
+	transform:translateY(4px);
 }
 
 .input{
@@ -236,7 +246,7 @@ h3	{
 	font-size:22px;
 	font-weight:lighter;
 	word-spacing:2px;
-	max-width:100%;
+	width:100%;
 }
 
 a {	color:#9999a2;
@@ -266,11 +276,155 @@ footer{
 	height:85px;
 }
 
-@media screen (min-width:981px)and(max-width:1200px) {
+
+@media screen and (max-width:640px){
+	#main-name{
+		font-size:30px;
+		font-weight:600;
+		height:inherit;
+		margin-left:0;
+		width:100%;
+		padding:15px 25px 20px 25px;
+		text-align:center;
+		line-height: normal;
+		float:none;
+	}
+	#nav{
+		width:100%;
+		margin-right:0;
+		padding:15px 20px 20px 20px;
+		height:55px;
+		float:none;
+		text-align: center;
+	}
+	h3{
+		word-spacing:62px; /*nav bar */
+	}
+	.container{
+		width:100%;
+		padding:15px;
+	}
+	#bio-image{
+	max-width:100%
+	height: auto;
+   	float:none;
+   	margin:5px;
+	}
+	#main-bio{
+		width:100%;
+		margin:0;
+		float:none;
+	}
+	#aboutheader{
+		font-size:25px;
+		margin:12px;
+		padding:15px;
+	}
+	.connect{
+		float:none;
+		width:100%;
+		margin-top:15px;
+		margin-right:0;
+	}
+	.icon{
+		text-align:left;
+		margin-left:5%;
+	}
+	h2{
+		font-size:21px;
+		padding:0 20px 20px 35px;
+		width:30px;
+	}
+	/*start of page 2 on 640 scr adjustments*/
+	#contactform {
+		width:100%;
+		margin-left:0;
+		margin-bottom:20px;
+		padding:0 20px 30px 20px;
+	}
+	.field .input {
+		width:100%;
+		/*padding-right:40px;*/
+	}
+	#M-textarea{
+		width:100%;
+	}
+	.submit{
+		width:100px;
+		height: 40px;
+		padding:6px 20px 20px 20px;
+		font-size:20px;
+	}
+	/*start of page 3 on 640 scr adjustments*/
+	#main3{
+		width:100%;
+		margin:0;
+		float:none;
+	}
+	img{
+		width:60%%;
+	}
+}
+@media screen and (min-width:641px) and (max-width:768px){
+	#main-name{
+		font-size:30px;
+		font-weight:600;
+		height:inherit;
+		margin-left:6%;
+		width:36%;
+		padding:15px 25px;
+		line-height: normal;
+	}
+	#nav{
+		margin-right:6%;
+		padding:15px 0;
+		height:inherit;
+	}
+	h3{
+		font-size:20px;   this belongs to navbar
+	}
+	h2{
+		font-size:20px;
+	}
+	h3{
+		font-size:20px;
+		word-spacing:0px;
+	}
+	p{
+		text-align:left;
+		font-size:18px;
+	}
+	.container{
+		padding:20px;
+	}
+	#aboutheader{
+		font-size:28px;
+		font-weight:bold;
+	}
+	#main-bio{
+		float:none;
+		width:94%;
+		margin-left:4%;
+	}
+	
+	.connect{
+		float:none;
+		width:94%;
+		margin-top:2%;
+		margin-left:4%;
+		margin-right:0;
+		margin-top:20px;
+	}
+
+	.icon{
+		text-align:left;
+		margin-left:3%;
+	}
+}
+/*@media screen (min-width:981px)and(max-width:1200px)*/ 
 	
 	#main-bio{
 		margin-right:0;
-		display:block;
 		clear:both;
 		float:none;
 		max-width:100%;
@@ -284,32 +438,68 @@ footer{
 		width:100%
 		margin:0;
 	}
-@media screen (min-width:769px)and(max-width:980px) {
-	
-	#main-bio{
-		background-color:orange;
-		border:5px double black;
+@media screen and (min-width:769px) and (max-width:980px) {
+	body{
+		max-width:980px;
 	}
-	#main-name{
-		width:100%
-		margin:0;
+	#container{
+		width:100%;
+	}
+	#main-bio{
+		width:50%;
+		margin-left:2%;	
+	}
+	h2{
+		font-size:21px;
+	}
+	h3{
+		font-size:20px;
+		word-spacing:0px;
+	}
+	p{
+		text-align:left;
+	}
+	/* This is the start of adjustments for page2*/
+	.connect{
+		width:27%;
+	}
+	#contactform{
+		width:50%;
+		margin-left:2%;
+	}
+	.field{
+		width:100%;
+		padding:30px 0;
+	}
+	.input{
+		width:100%;
+	}
+	#M-textarea{
+		width:100%;
+	}
+	/* Below is the adjustments for page 3*/
+	#nav{
+		margin-right:18%;
+	}
+	#main3{
+		width:37%;
+		margin-left:2%;
+	}	
+	
+}
+
+/*@media screen (min-width:641px) and(max-width:768px){
+	#main-bio{
+		width:51%;
+		}
+	#connect{
+		width:21%;
 	}
 	#nav{
-		width:100%
-		margin:0;
+		width:14%;
 	}
+}*/
 
-}
 
-@media screen (min-width:641px) and(max-width:768px){
-	#main-bio{background-color:green;
-		border:5px double black;
-	}
-}
 
-@media screen (max-width:640px){
-	#main-bio{background-color:blue;
-		border:5px double yellow;
 
-	}
-}
