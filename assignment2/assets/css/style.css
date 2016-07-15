@@ -39,9 +39,31 @@ body {
 	height:90px;
 	padding:25px 0;
 	margin-right:14%;
+	font-color:black;
+	font-size:25px;
+
+}
+#navtext{
+	font-color:black;
+	font-size:25px;
 }
 
-
+.navbar-brand{
+	font-family:"Georgia, Times, Times_New_Roman, serif";
+	background-color:#4aaaa5;
+	color: white;
+	font-size:36px;
+	padding:15px 20px 40px 30px;
+	width:240px;
+	height:104px;
+	/*margin:auto 0;
+	margin-left:147px;*/
+	margin-left:3%;
+	text-align:left;
+	line-height:110%;
+	float:left;
+	border:1px #ffffff;
+}
 .container{
 	/* this is main content area (applies to p 1-3)*/
 	width: 100%;
@@ -244,9 +266,11 @@ h3	{
 	and that is the nav bar About Profile Contact */
 	font-family:"Georgia, Times, Times_New_Roman, serif";
 	font-size:22px;
-	font-weight:lighter;
+	font-weight:bolder;
 	word-spacing:2px;
 	max-width:100%;
+
+
 }
 
 a {	color:#9999a2;
@@ -264,7 +288,7 @@ label{
 	width:100%;
 }
 
-footer{
+#footer{
 	clear:both;
 	float:left;
 	background-color:#666666;

@@ -2,33 +2,38 @@
 <html>
 
 <head> 
-
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://bootswatch.com/yeti/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="assets/css/reset.css"/>
 	<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>	
-	<title> HW Week 1 Page 2</title>
+	<title>HW Week 1 Page 2</title>
 </head>
-	
-<body>
-	<header>
-		<div>
-			<div>
-				<h1 id="main-name"><strong> Kylie Soderblom </strong></h1>
-			</div>
-				<div id="nav">
-						<h3>
-							<a href="index.html">   About   </a>   |
-							<a href="Portfolio.html">   Portfolio  |</a>
-							<a href="Contact.html">   Contact   </a> 
-						</h3>
-
+	<div class="wrapper">
+	<body>
+		<header>
+		<nav class="navbar navbar-default navbar-static-top navbar navbar-inverse">
+			<div>>
+			 <a class="navbar-brand" href="#">Kylie Soderblom</a>
+			 </div>
+			
+				<div id="nav">					
+					<h3 id="navtext"><a href="index.html"> About </a>
+					<a href="Portfolio.html"> | Portfolio | </a>
+					<a href="Contact.html">  Contact </a>
+					</h3>
 				</div>
 		</div>
-	</header>
-	
-	<div class="container" style="background-image:url('assets/images/greendust.png');">
-		<section id="contactform">
-			<h1 id="contactheader">Contact</h1>
-			
+		</header>
+
+<div class="wrapper">	
+	<body>
+		<div class="container-fluid" id="maincontent">
+			<div class="row">
+				<!--<div section id="MainBio" class="col-m-8">-->
+				<section id="contactform">
+			<h1 id="contactheader">Contact</h1>			
 				<form action="MAILTO:kyliecalif@gmail.com" method="post" enctype="url-encoded" style="text-align:left"> 
 					<div class="field">
 						<label>
@@ -45,7 +50,7 @@
 								<br>
 						<label>
 							Message: <br>
-							<input id="M-textarea" type="text" name="message" value="Please leave a message and I'll get back to you as soon as I can."font-family:cursive/>
+							<input id="M-textarea" type="text" name="message" value="Please leave a message."/>
 								<br>
 
 						</label>
@@ -57,22 +62,23 @@
 					</div>
 				</form>
 		</section>
-	
-		<section class="connect">
-				<h2>Connect With Me</h2>
-					<br>
-					<div class="icon">
-						<a href="https://github.com/ABitOfKylie"><img src="assets/images/githubicon.png" alt="GitHub Icon" height="60" width="60"/></a>
-						<a href="https://www.linkedin.com/"><img src="assets/images/linkedinicon.png" alt="Linkedin Icon" height="60" width="60"/></a> 
-						<a href="https://www.stackoverflow.com"><img src="assets/images/stackoverflowicon.png" alt="StackOverflow Icon" height="60" width="60"/></a> 
-					</div>
-		</section>
-	</div>
-<footer>  &copy; Copyright 2016 Kylie Soderblom</footer>
-</body>	
-
-
+				<section class="connect" class=col-m-4>
+						<h2>Connect With Me</h2>
+						<br>
+						<div class="icon">
+							<a href="https://github.com/ABitOfKylie"><img src="assets/images/githubicon.png" alt="GitHub Icon" height="60" width="60"/></a>
+							<a href="https://www.linkedin.com/"><img src="assets/images/linkedinicon.png" alt="Linkedin Icon" height="60" width="60"/></a> 
+							<a href="https://www.stackoverflow.com"><img src="assets/images/stackoverflowicon.png" alt="StackOverflow Icon" height="60" width="60"/></a> 
+						</div>
+				</section>
+			</div>
+		</div>
+			
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	    
+<script src="js/bootstrap.min.js"></script>
+		
+		<footer id="footer">  &copy; Copyright 2016 Kylie Soderblom </footer>	
+	</body>	
+	</div> <!--div for wrapper-->
 </html>
-
-
-

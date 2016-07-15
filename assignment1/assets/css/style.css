@@ -299,7 +299,8 @@ footer{
 		text-align: center;
 	}
 	h3{
-		word-spacing:62px; /*nav bar */
+		word-spacing:55px;
+		line-height: 80% /*nav bar */
 	}
 	#bio-image{
     width: 550px;
