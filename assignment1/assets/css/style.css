@@ -80,6 +80,7 @@ body {
 	background-color:#ffffff;
 	border: 5px #dddddd;
 }
+
 /*div.icon:hover{
 	border:5px solid #4aaaa5; - work on this later for individual links
 below is the left element (Contact Form Page 2) in container/main content*/
@@ -300,6 +301,15 @@ footer{
 	h3{
 		word-spacing:62px; /*nav bar */
 	}
+	#bio-image{
+    width: 550px;
+    height: 235px;
+    background: url('/images/nature.jpg');
+  }
+		   /* background-image: url('..images/nature.jpg'); 
+			check <picture> or srcset, how to switch image 
+			depending on screensize
+	}*/
 	.container{
 		width:100%;
 		padding:15px;
@@ -321,21 +331,21 @@ footer{
 		padding:15px;
 	}
 	.connect{
-		float:none;
+		float:left;
 		width:100%;
 		margin-top:15px;
 		margin-right:0;
 	}
 	.icon{
 		text-align:left;
-		margin-left:5%;
+		margin-left:3%;
 	}
-	h2{
+	/*h2{
 		font-size:21px;
-		padding:0 20px 20px 35px;
+		padding:25px 0 20px 25px;
 		width:30px;
 	}
-	/*start of page 2 on 640 scr adjustments*/
+	start of page 2 on 640 scr adjustments*/
 	#contactform {
 		width:100%;
 		margin-left:0;
@@ -352,14 +362,14 @@ footer{
 	.submit{
 		width:100px;
 		height: 40px;
-		padding:6px 20px 20px 20px;
+		padding:6px 20px 20px 18px;
 		font-size:20px;
 	}
 	/*start of page 3 on 640 scr adjustments*/
 	#main3{
-		width:100%;
+		width:55%;
 		margin:0;
-		float:none;
+		float:left;
 	}
 	img{
 		width:60%%;
